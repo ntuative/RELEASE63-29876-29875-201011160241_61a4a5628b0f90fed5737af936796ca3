@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><layout name="logout" width="87" height="42" version="0.1" uid="E38FE1D7-05B4-9E83-5211-3FE440B82FDA">
+  <window>
+    <border x="0" y="0" width="87" height="42" params="64" style="1">
+      <children>
+        <button x="14" y="10" width="58" height="22" params="131089" style="0" name="log_out_button" caption="Log%20out"/>
+      </children>
+    </border>
+  </window>
+</layout>

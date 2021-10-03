@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout name="QuestEngine" width="390" height="405" version="0.1" uid="B616354D-1D5E-2F78-3782-4F437944FFA6">
+  <window>
+    <frame x="0" y="0" width="390" height="405" params="32769" style="0" name="main" color="0x3e3e3e">
+      <children>
+        <border x="0" y="0" width="378" height="373" params="17" style="0" name="content">
+          <children>
+            <itemlist x="5" y="5" width="130" height="338" params="17" style="0" name="quests">
+              <variables>
+                <var key="spacing" value="5" type="int"/>
+              </variables>
+            </itemlist>
+            <scrollbar_vertical x="140" y="5" width="20" height="338" params="17" style="0" name="questsScrollbar">
+              <variables>
+                <var key="scrollable" value="quests" type="String"/>
+              </variables>
+            </scrollbar_vertical>
+            <border x="5" y="348" width="150" height="20" params="16" style="2" name="currency.container" color="0xe0e0e0">
+              <children>
+                <bitmap x="2" y="2" width="20" height="16" params="16" style="0" name="currency.icon"/>
+                <text x="23" y="4" width="120" height="14" params="144" style="0" name="currency.amount" caption="Snowflakes%3A%20%25amount%25">
+                  <variables>
+                    <var key="text_color" value="0x0" type="hex"/>
+                    <var key="embed_fonts" value="true" type="Boolean"/>
+                  </variables>
+                </text>
+              </children>
+            </border>
+            <itemlist x="163" y="5" width="208" height="390" params="17" style="0" name="quest.container">
+              <children>
+                <background x="0" y="0" width="208" height="27" params="16" style="0" name="quest.header" color="0xffcaeef3" background="true">
+                  <children>
+                    <bitmap x="0" y="0" width="208" height="27" params="16" style="0" name="quest.header.img"/>
+                    <text x="0" y="2" width="208" height="14" params="16" style="0" name="quest.header.title" caption="DAY%20XX" color="0x0">
+                      <variables>
+                        <var key="font_face" value="Volter Bold" type="String"/>
+                        <var key="text_color" value="0xffffff" type="hex"/>
+                        <var key="embed_fonts" value="true" type="Boolean"/>
+                        <var key="auto_size" value="center" type="String"/>
+                      </variables>
+                    </text>
+                    <text x="0" y="12" width="208" height="14" params="16" style="0" name="quest.header.short" caption="Elves%20take%20over" color="0x0">
+                      <variables>
+                        <var key="font_face" value="Volter Bold" type="String"/>
+                        <var key="text_color" value="0xffffff" type="hex"/>
+                        <var key="embed_fonts" value="true" type="Boolean"/>
+                        <var key="auto_size" value="center" type="String"/>
+                      </variables>
+                    </text>
+                  </children>
+                </background>
+                <text x="0" y="32" width="208" height="50" params="16" style="0" name="quest.description" caption="%24%7B002_lorem_ipsum_content%7D">
+                  <variables>
+                    <var key="text_color" value="0x0" type="hex"/>
+                    <var key="embed_fonts" value="true" type="Boolean"/>
+                    <var key="word_wrap" value="true" type="Boolean"/>
+                    <var key="margin_left" value="5" type="int"/>
+                    <var key="margin_right" value="5" type="int"/>
+                  </variables>
+                </text>
+                <bitmap x="0" y="87" width="208" height="116" params="16" style="0" name="quest.image"/>
+                <text x="0" y="208" width="208" height="30" params="16" style="0" name="quest.requirement" caption="%24%7B002_lorem_ipsum_content%7D">
+                  <variables>
+                    <var key="text_color" value="0x808080" type="hex"/>
+                    <var key="embed_fonts" value="true" type="Boolean"/>
+                    <var key="word_wrap" value="true" type="Boolean"/>
+                    <var key="margin_left" value="5" type="int"/>
+                    <var key="margin_right" value="5" type="int"/>
+                    <var key="margin_bottom" value="5" type="int"/>
+                  </variables>
+                </text>
+                <border x="0" y="243" width="208" height="30" params="16" style="2" name="quest.status.container" color="0x88ba30">
+                  <children>
+                    <button x="4" y="4" width="200" height="22" params="131089" style="0" name="quest.button.accept" caption="Accept%20Quest" width_min="200"/>
+                    <text x="4" y="4" width="200" height="22" params="16" style="0" name="quest.status" caption="status" visible="false" width_min="200">
+                      <variables>
+                        <var key="text_color" value="0xffffff" type="hex"/>
+                        <var key="embed_fonts" value="true" type="Boolean"/>
+                        <var key="word_wrap" value="true" type="Boolean"/>
+                      </variables>
+                    </text>
+                  </children>
+                </border>
+                <border x="0" y="278" width="208" height="60" params="16" style="2" name="quest.reward.container" color="0xe0e0e0">
+                  <children>
+                    <border x="4" y="4" width="200" height="20" params="16" style="2" name="quest.reward.title.container" color="0x808080">
+                      <children>
+                        <text x="0" y="2" width="200" height="18" params="16" style="0" name="quest.reward.title" caption="REWARD%3A" width_min="200">
+                          <variables>
+                            <var key="font_face" value="Volter Bold" type="String"/>
+                            <var key="text_color" value="0xffffff" type="hex"/>
+                            <var key="embed_fonts" value="true" type="Boolean"/>
+                            <var key="auto_size" value="center" type="String"/>
+                          </variables>
+                        </text>
+                      </children>
+                    </border>
+                    <text x="40" y="25" width="162" height="35" params="16" style="0" name="quest.reward.desc" caption="6%20snowflakes%20yoo%20can%20use%20tub%20buy%20snowflaksd%20fundioo%20from%20the%20catalogue%20fduring%20december.">
+                      <variables>
+                        <var key="text_color" value="0x0" type="hex"/>
+                        <var key="embed_fonts" value="true" type="Boolean"/>
+                        <var key="word_wrap" value="true" type="Boolean"/>
+                      </variables>
+                    </text>
+                    <bitmap x="5" y="25" width="30" height="30" params="16" style="0" name="quest.reward.icon"/>
+                  </children>
+                </border>
+                <border x="0" y="343" width="208" height="20" params="16" style="2" name="quest.available.container" color="0x808080">
+                  <children>
+                    <text x="0" y="3" width="208" height="20" params="16" style="0" name="quest.available" caption="Quest%20available%20until%3A%20dd/mm/yyyy" width_min="208">
+                      <variables>
+                        <var key="text_color" value="0xffffff" type="hex"/>
+                        <var key="embed_fonts" value="true" type="Boolean"/>
+                        <var key="auto_size" value="center" type="String"/>
+                      </variables>
+                    </text>
+                  </children>
+                </border>
+              </children>
+              <variables>
+                <var key="spacing" value="5" type="int"/>
+              </variables>
+            </itemlist>
+          </children>
+        </border>
+      </children>
+    </frame>
+  </window>
+</layout>
